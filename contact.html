@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!--- Responsive ---->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>The world most endangered animals</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/brown-bear.png" type="img/png" />
+  <!--- CSS --->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a6dcc0779b.js" crossorigin="anonymous"></script>
+
+  <!-- JQUERY  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+
+<body class="site">
+
+  <header class="white">
+    <button class="hamburger">&#9776;</button>
+    <button class="cross">&#735;</button>
+    <!-- MOBILE MENU ----------->
+    <nav class="menu">
+        <ul>
+          <li><a href="index.html">why they matter</a></li>
+          <li><a href="about.html">meet them</a></li>
+          <li class="nav-donate">
+            <a href="donate.html"><i class="fas fa-heart"></i>donate</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- DESKTOP MENU ----------->
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="index.html">why they matter</a></li>
+          <li><a href="about.html">meet them</a></li>
+
+          <li class="nav-donate"><a href="donate.html"><i class="fas fa-heart"></i>donate</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <main class="site-content">
+      <div class="container">
+        <div class="header">
+          <h1 class="showup">
+
+            If you have a question or enquiry,<br>
+            please contact us below
+          </h1>
+
+          <p>Contact Form</p>
+        </div>
+
+        <form id="contact_form" name="contact_form" method="post" action="form.php" onsubmit="return validateForm(this)">
+            <div class="first-name input-section">
+              <label for="firstname" class="label_input_wrap">
+                First Name:
+              </label>
+              <input type="text" name="req_firstname" id="firstname" />
+            </div>
+            <div class="last-name input-section">
+              <label for="lastname" class="label_input_wrap">
+                Last Name:
+              </label>
+              <input type="text" name="req_lastname" id="lastname" />
+            </div>
+
+            <div class="email input-section">
+              <label for="email" class="label_input_wrap">
+                Email:
+              </label>
+              <input type="email" name="req_email" id="email">
+            </div>
+
+
+
+
+            <div class="hear-about input-section">
+              <label for="hear-about" class="label_input_wrap">
+                How did you hear about us?
+              </label>
+              <select name="hear-about" id="hear-about">
+                <option value="google">Google</option>
+                <option value="friend">Friend</option>
+                <option value="advert">Advert</option>
+                <option value="other">Other</option>
+              </select>
+
+            </div>
+
+            <div class="comments input-section">
+              <label for="comments" class="label_input_wrap">
+                Comments:
+              </label>
+              <textarea name="comments" id="comments" rows="5" cols="30"></textarea>
+            </div>
+
+
+
+
+          <div class="submit">
+            <input  type="submit" value="send" />
+          </div>
+
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Follow Us On
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+
+        <a href="https://instragram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      </p>
+    </footer>
+
+
+	<script src="js/hamburger.js"></script>
+</body>
+</html>
