@@ -717,6 +717,13 @@ span.highlight {
      margin-bottom: 40px;
 	}
 
+	.center {
+    /* align-self: center; */
+    /* margin-left: auto; */
+    margin: 0 auto;
+	}
+}
+
 
 
 
@@ -986,9 +993,9 @@ span.highlight {
     transition: .3s;
 }
 
-
-
-
+.center {
+    margin: 47px;
+}
 
 }
 
@@ -1005,5 +1012,4 @@ span.highlight {
 	.quote h1 {
     font-size: 2rem;
   }
-
-}
+ }
